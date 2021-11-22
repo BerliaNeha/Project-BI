@@ -1,0 +1,557 @@
+$dark: #011;
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Pacifico&family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Pacifico&family=Vidaloka&display=swap");
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cormorant&family=Indie+Flower&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Pacifico&family=Vidaloka&display=swap");
+@import "reset";
+
+body {
+  background-image: url(/images/meet/background1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: whitesmoke;
+}
+
+.container {
+  margin-top: 4rem;
+}
+
+// header {
+//     background-image: url(/images/meet/words.jpg);
+//     background-position: center;
+//     background-size: contain;
+//     text-align: center;
+//     height: 10rem;
+//     font-size: 1.3rem;
+//     // // border-bottom: 1px solid rgba(128, 128, 128, 0.65);
+//     // position: sticky;
+//     // top: 0;
+
+//   }
+
+.heading {
+  color: rgb(236, 228, 228);
+  font-family: "Vidaloka", serif;
+  font-size: 3rem;
+
+  width: 100%;
+  height: 60vh;
+  //   transform-style: preserve-3d;
+  //   transform-origin: 50% 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  //   justify-content: center;
+  //   align-items: center;
+
+  padding: 1rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.one {
+  grid-column: 2/4;
+  grid-row: 1/1;
+}
+
+// .two {
+//   grid-column: 3/4;
+//   grid-row: 1/1;
+// }
+
+.three {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.four {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.five {
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+
+.subheading {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.heading2 {
+  margin-top: 80px;
+}
+
+.aboutt {
+  padding-bottom: 10px;
+  margin: 20px 40px 0 0;
+  padding-left: 10px;
+}
+
+.exploree {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.exploree h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+}
+
+// Incorporating the hover card effect
+
+.envelope {
+  width: 100%;
+  height: 400px;
+  background: rgba(73, 72, 92, 0.787);
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.123);
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.envelope a .chat {
+  position: absolute;
+  left: -4px;
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  object-fit:cover;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  padding: 0.4em 1.5em;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  border: radius 10px;
+  transform: scale(0.9);
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.content p {
+  font-size: 0.8em;
+}
+
+.envelope:hover .content {
+  height: 150px;
+}
+
+.container2 {
+  width:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+
+.interests {
+
+  grid-column: 1/1;
+  grid-row: 1/2;
+}
+
+.age-groups {
+ 
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.local {
+  grid-column: 1/1;
+  grid-row: 2/3;
+}
+
+.international {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.container3 {
+  font-family: "Vidaloka", serif;
+  font-size: 2rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  flex-direction: column;
+}
+
+.box2 {
+  width: 350px;
+  height: 450px;
+  font-size: 16px;
+  padding: 40px 40px;
+  background: #0a032f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+}
+
+.user {
+  margin-top: 30px;
+}
+
+.fas {
+  position: absolute;
+}
+
+.input {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 0 30px 15px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #141e75;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.input:focus {
+  border-bottom: 1px solid #eeeeee;
+}
+
+// .login-bttn {
+//   margin-top: 25px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+
+// .bttn {
+//   display: block;
+//   width: 90%;
+//   padding: 5px;
+//   background-color: #eeeeee;
+//   color: #0f044c;
+//   border: none;
+//   border-radius: 20px;
+//   font-size: 20px;
+//   font-weight: 600;
+//   opacity: 0.8;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }
+
+// .bttn:hover {
+//   opacity: 1;
+// }
+
+.signup span {
+  color: #7fb8e6;
+}
+
+.signup span:hover {
+  color: #144770;
+}
+
+// Sleep Awake Toggle css
+
+.toggleBox {
+  max-width: 420px;
+  padding: 1%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.toggleBar {
+  width: 30%;
+  padding-bottom: 20%;
+  background-color: #6e6e6e;
+  float: left;
+  position: relative;
+  margin-left: 35%;
+  transition: all 0.6s ease-out;
+}
+.toggleBar::before {
+  content: "";
+  width: 60%;
+  position: absolute;
+  background-color: #6e6e6e;
+  top: 0;
+  left: -30%;
+  height: 100%;
+  border-radius: 50% 0 0 50%;
+  transition: all 0.6s ease-out;
+}
+.toggleBar::after {
+  content: "";
+  width: 60%;
+  position: absolute;
+  background-color: #6e6e6e;
+  top: 0;
+  right: -30%;
+  height: 100%;
+  border-radius: 0 50% 50% 0;
+  transition: all 0.6s ease-out;
+}
+.ball {
+  width: 60%;
+  padding-bottom: 60%;
+  position: absolute;
+  background-color: white;
+  top: 5%;
+  left: -25%;
+  border-radius: 50%;
+  box-shadow: 0px 2px 8px #999;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.6s ease-in;
+}
+.ballGradient {
+  background-image: radial-gradient(
+    circle at 80% 20%,
+    white 0%,
+    #fff 30%,
+    #ddd 80%
+  );
+}
+/* face component */
+.face {
+  width: 50%;
+  padding-bottom: 50%;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+.faceSleep {
+  top: 25%;
+  left: 15%;
+  transition: all 0.3s ease-in 0.3s;
+}
+.faceAwake {
+  left: 35%;
+  transition: all 0.3s ease-in 0s;
+  transform: translateX(-200%);
+}
+.face .eyes {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 20%;
+  overflow: hidden;
+}
+.face .eyesLeft {
+  left: 5%;
+}
+.face .eyesRight {
+  right: 5%;
+}
+.faceAwake .eyesLeft {
+  left: 0%;
+}
+.faceAwake .eyesRight {
+  right: 0%;
+}
+.faceSleep .eyes {
+  top: 40%;
+}
+.faceSleep .eyesBall {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #8f8f8f;
+  top: -45%;
+  /*  border:5% solid #8f8f8f; */
+}
+.faceAwake .eyesBall {
+  width: 60%;
+  height: 65%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #8f8f8f;
+  top: 5%;
+  /*  border:5% solid #8f8f8f; */
+}
+.face .mouth {
+  width: 100%;
+  height: 30%;
+  /*  border:1px solid red; */
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  overflow: hidden;
+}
+.faceSleep .mouthLips {
+  width: 20%;
+  height: 40%;
+  background-color: #8f8f8f;
+  position: absolute;
+  top: -10%;
+  left: 35%;
+  border-radius: 50%;
+}
+.faceAwake .mouthLips {
+  width: 60%;
+  padding-bottom: 45%;
+  background-color: #4433a1;
+  position: absolute;
+  top: -60%;
+  left: 12.5%;
+  border-radius: 50%;
+  box-shadow: inset 0px 9px 9px rgba(115, 115, 115, 0.5);
+}
+.faceSleep .mouth {
+  bottom: -10%;
+}
+.faceAwake .mouth {
+  bottom: 10%;
+}
+/* transition */
+.checkbox:checked ~ .toggleBar,
+.checkbox:checked ~ .toggleBar::before,
+.checkbox:checked ~ .toggleBar::after {
+  background-color: #4433a1;
+}
+.checkbox:checked ~ .toggleBar .ball {
+  transform: translateX(150%);
+}
+.checkbox:checked ~ .toggleBar .faceSleep {
+  transform: translateX(200%);
+  transition-delay: 0;
+  transition: all 0.3s ease-out 0s;
+}
+.checkbox:checked ~ .toggleBar .faceAwake {
+  transform: translateX(0);
+  transition-delay: 0;
+  transition: all 0.3s ease-out 0.3s;
+}
+
+// CSS for Contact Us text icons and para
+
+.container4 {
+  width: 100%;
+  height: 280px;
+  background-color: #be5a4ba1;
+  position: relative;
+}
+
+.contact-heading {
+  position: absolute;
+  top: 10px;
+  left: 80px;
+  width: 85%;
+  font-family: "Comfortaa", cursive;
+  font-size: 30px;
+  text-indent: 15%;
+  color: rgb(219, 210, 210);
+}
+
+.contact-button {
+  padding: 10px;
+  background-color: #131313;
+  color: #f3f2ec;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.8;
+  // margin-left: 40%;
+}
+
+.style-contact-button:hover {
+  color: #f3f2ec;
+}
+
+.show {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social-icons {
+  width: 100px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.show {
+  margin: 0.2rem 0;
+  display: flex;
+  left: inherit;
+  top: 31.5px;
+  right: 2rem;
+  bottom: inherit;
+}
+
+.share-slogan {
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-family: "Comfortaa", cursive;
+  color: rgb(219, 210, 210);
+}
+
+.iconImage {
+  width: 50px;
+}
+
+.help {
+  display: flex;
+  margin-top: 60px;
+  padding-bottom: 10px;
+  width:100%;
+  justify-content: space-around;
+}
+// .help-title{
+//   margin-top:20px;
+//   margin-left:85px;
+//   color: #f3f2ec;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   font-size: 35px;
+//   font-weight: 200;
+//   opacity: 0.8;
+//   font-family: 'Indie Flower', cursive;
+//   }
+
+.help a {
+  // display: block;
+  
+  text-decoration: none;
+  color: rgb(219, 210, 210);
+  padding: 3px;
+  margin-left: 10px;
+  font-family: "Indie Flower", cursive;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.help a:hover {
+  color: #4433a1;
+}
+
+
+@media (min-width: 991.98px) {
+
+.container2 {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.envelope{
+  height:500px;
+}
+ }
