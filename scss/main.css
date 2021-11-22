@@ -11969,7 +11969,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  background-image: url(images/meet/background1.jpeg);
+  background-image: url("/images/meet/background1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
