@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Pacifico&family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Pacifico&family=Vidaloka&display=swap");
@@ -11969,7 +11970,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  background-image: url("images/meet/background1.jpeg");
+  background-image: url("../images/meet/background1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -11978,7 +11979,7 @@ body {
 }
 
 .container {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
 }
 
 .heading {
@@ -12221,7 +12222,7 @@ body {
   color: #144770;
 }
 
-.toggleBox {
+.toggleContainer {
   max-width: 420px;
   padding: 1%;
   overflow: hidden;
@@ -12282,7 +12283,7 @@ body {
   transition: all 0.6s ease-in;
 }
 
-.ballGradient {
+.ballShades {
   background-image: radial-gradient(circle at 80% 20%, white 0%, #fff 30%, #ddd 80%);
 }
 
@@ -12430,14 +12431,14 @@ body {
 
 .container4 {
   width: 100%;
-  height: 280px;
+  height: 380px;
   background-color: #be5a4ba1;
   position: relative;
 }
 
 .contact-heading {
   position: absolute;
-  top: 10px;
+  top: 60px;
   left: 80px;
   width: 85%;
   font-family: "Comfortaa", cursive;

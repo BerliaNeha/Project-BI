@@ -1,5 +1,8 @@
 $dark: #011;
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Pacifico&family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Maven+Pro&family=Noto+Sans+Mono:wght@300&family=Pacifico&family=Vidaloka&display=swap");
@@ -8,7 +11,7 @@ $dark: #011;
 @import "reset";
 
 body {
-  background-image: url("images/meet/background1.jpeg");
+  background-image: url("../images/meet/background1.jpeg");
   // /home/user/Desktop/Project/Project-BI/images/meet/background1.jpeg
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,7 +21,7 @@ body {
 }
 
 .container {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
 }
 
 // header {
@@ -264,7 +267,7 @@ body {
 
 // Sleep Awake Toggle css
 
-.toggleBox {
+.toggleContainer {
   max-width: 420px;
   padding: 1%;
   overflow: hidden;
@@ -316,7 +319,7 @@ body {
   z-index: 1;
   transition: all 0.6s ease-in;
 }
-.ballGradient {
+.ballShades {
   background-image: radial-gradient(
     circle at 80% 20%,
     white 0%,
@@ -440,14 +443,14 @@ body {
 
 .container4 {
   width: 100%;
-  height: 280px;
+  height: 380px;
   background-color: #be5a4ba1;
   position: relative;
 }
 
 .contact-heading {
   position: absolute;
-  top: 10px;
+  top: 60px;
   left: 80px;
   width: 85%;
   font-family: "Comfortaa", cursive;
